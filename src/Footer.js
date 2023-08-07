@@ -1,12 +1,12 @@
 const Footer = () => {
     return ( 
         <>
-            <footer></footer>
+            <footer>
+                <figcaption>Copyright Liitle Lemon</figcaption>
+                <p>Designed by DaFlusher</p>
+            </footer>
         </>
      );
 }
  
 export default Footer;
-<>
-    <footer></footer>
-</>
