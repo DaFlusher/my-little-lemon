@@ -1,7 +1,10 @@
+import favicon from './public/favicon.ico';
 const Header = () => {
     return (  
         <>
-            <header></header>
+            <header>
+                <img src={ favicon}/>
+            </header>
         </>
     );
 }
