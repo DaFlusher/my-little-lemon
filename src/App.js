@@ -1,15 +1,18 @@
 import{Route,Routes} from 'react-router-dom'
-import './App.css';
+
 import Header from './Header';
 import Nav from './navigation/Nav';
 import Main from './Main';
 import Footer from './Footer';
+import './App.css';
+import Reserve from './Reserve';
 
 
 function App() {
-  return (
+  return(<Reserve/>)
+  /*return (
     <>
-      <div className='grids'>
+      <div className='grids' style={{}}>
         <div className='nav-head-grid'>
           
             <Header/>
@@ -20,12 +23,20 @@ function App() {
           
           
         </div>
-        <Main/>
-        <Footer/>
-      </div> 
+
+        <div className='main'>
+            <Main/>
+        </div>
+
+        <div className='footer'>
+            <Footer/>
+        </div>
+       
+        
+      </div>
       
     </>
-  )
+  )*/
 
 
 

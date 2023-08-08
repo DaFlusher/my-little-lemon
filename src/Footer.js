@@ -3,7 +3,7 @@ const Footer = () => {
         <>
             <footer>
                 <figcaption>Copyright Liitle Lemon</figcaption>
-                <p>Designed by DaFlusher</p>
+                <p className="daflusher">Designed by DaFlusher</p>
             </footer>
         </>
      );
