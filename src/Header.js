@@ -3,7 +3,7 @@ const Header = () => {
     return (  
         <>
             <header>
-                <img src={logo} alt='logo image' height={100}/>
+                <img src={logo} alt='logo image' height={56}/>
             </header>
         </>
     );

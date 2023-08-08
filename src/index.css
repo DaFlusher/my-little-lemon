@@ -7,7 +7,187 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+div{
+  margin: 0;
+  padding: 0;
+}
+
+.nav-head-grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 0;
+  border-bottom: 2px solid gray;
+  color: black;
+  margin: 0 70px;
+  width: 98%;
+  text-align: center;
+  justify-items: start;
+}
+
+
+/* Creating the navbar using a grid
+ul{list-style: none;
+display: grid;
+grid-template-columns:  1fr 1fr 1fr 2fr 2fr 1fr;
+column-gap: 0;
+
+
+}*/
+
+/*Creating a navbar using flexbox*/
+ul{list-style: none;
+display: flex;
+flex-basis: content;
+flex-wrap: wrap;
+width: 98%;
+}
+
+a{text-decoration: none;
+color: black;
+margin: 0;
+}
+
+li{margin-left: 0;
+  margin-right: 20px;
+  margin-left: 0;
+  padding-left:10px;
+
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.hero-image{
+  height: 40%;
+  background-color: #495E57;
+  margin: 0;
+  padding:  0;
+}
+
+h1,h2,h3{margin: 0;}
+
+.heading{
+  font-family: 'Markazi Text', serif;
+  font-weight: 500;
+  font-size: 64px;
+  color: #F4CE14;
+  padding-bottom: 4px;
+  margin-bottom: 0;
+  padding-left: 70px;
+  
+}
+
+.location{
+  font-family:'Markazi Text', serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #EDEFEE;
+  padding-left: 70px;
+  
+}
+
+.image-grid{
+  display: flex;
+  
+  
+}
+
+.description{
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  width: 30%;
+  padding-left: 70px;
+  color: #fff;
+  text-align: left;
+}
+
+.weeks-special{
+  font-family:'Markazi Text', serif;
+  font-weight: 400;
+  
+  font-size: 36px;
+  display: flex;
+  padding-left: 70px;
+  padding-top: 64px;
+  padding-right: 28%;
+  justify-content: center;
+}
+
+.week{flex: 1;
+
+}
+
+.online-menu{
+  padding: 10px 20px;
+  background-color: #F4CE14;
+  color: black;
+  border: 1px solid #F4CE14; 
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px ;
+  font-family: 'Markazi Text', serif;
+  font-weight: 400;
+  font-size: 18px;
+  
+}
+
+.dishes{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20;
+  margin-right: 20px;
+  margin-top: 40px;
+  padding: 10px 70px;
+  
+  
+}
+
+.greek-dessert{
+  background-color: #EDEFEE ;
+  margin-right: 40px;
+}
+
+.bruchetta{
+  background-color: #EDEFEE ;
+  margin-right: 40px;
+}
+
+.lemon-dessert{
+  background-color: #EDEFEE ;
+  
+}
+
+.price-flex{
+  display: flex;
+  padding:  10px 40px;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  
+
+
+}
+.dish{
+  
+}
+  
+
+.price{
+  padding-right: 50%;
+  color: #ee9972;
+  
+  
+}
+.order{
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  align-self: center;
+
 }

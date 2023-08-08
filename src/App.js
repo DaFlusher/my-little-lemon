@@ -9,10 +9,21 @@ import Footer from './Footer';
 function App() {
   return (
     <>
-      <Header/>
-      <Nav/>
-      <Main/>
-      <Footer/>
+      <div className='grids'>
+        <div className='nav-head-grid'>
+          
+            <Header/>
+        
+          
+            <Nav/>
+        
+          
+          
+        </div>
+        <Main/>
+        <Footer/>
+      </div> 
+      
     </>
   )
 
