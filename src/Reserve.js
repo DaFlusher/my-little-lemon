@@ -61,7 +61,6 @@ const Reserve = () => {
             
     }
     return (
-        <>
             
             
             <div className='grids' style={{}}>
@@ -83,7 +82,7 @@ const Reserve = () => {
               
             </div>
 
-        </>
+        
       );
 }
  

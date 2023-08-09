@@ -6,10 +6,16 @@ import Main from './Main';
 import Footer from './Footer';
 import './App.css';
 import Reserve from './Reserve';
+import Info from './Info';
 
 
 function App() {
-  return(<Reserve/>)
+  return(<>
+      
+  
+      <Info/>
+  </>
+  )
   /*return (
     <>
       <div className='grids' style={{}}>
