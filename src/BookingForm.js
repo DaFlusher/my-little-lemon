@@ -12,6 +12,7 @@ const BookingForm = () => {
     }
 
     const handleTimeChange=(e)=>{
+        
         setAvailableTime(e.target.value)
     }
 

@@ -10,6 +10,7 @@ import BookingForm from './BookingForm';
 
 const ReserveTable = () => {
     
+    
     return (
             
             
@@ -26,7 +27,7 @@ const ReserveTable = () => {
                     <h2 className='table-subhead'>Please enter your dining info below</h2>
                     
                     <section>
-                        <BookingForm/>
+                        <BookingForm />
                     </section>
 
                     <p><a href='#' style={{marginRight:'4%', fontSize:'18px'}}>Next Page</a>Pg 1 of 2</p>
