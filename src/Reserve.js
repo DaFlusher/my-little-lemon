@@ -8,17 +8,7 @@ import Footer from './Footer';
 
 
 const Reserve = () => {
-
-    const modal=()=>{
-        return(<>
-            <h3>Table Reserved</h3>
-            <p>Date:{date.toLocaleDateString}</p>
-            <p>Time:{time.toLocaleTimeString}</p>
-            <p>Number of persons{number}</p>
-
-        </>)
-    }
-     
+    
     const [date, setDate]= useState(new Date().toLocaleDateString());
     const[time, setTime]= useState(new Date().toLocaleTimeString());
     const[number, setNumber]= useState(2);

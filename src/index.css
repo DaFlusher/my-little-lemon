@@ -140,6 +140,20 @@ h1,h2,h3,h4,h5,h6{margin: 0; padding: 0;}
   border: 0;
 }
 
+.submit-btn{
+  padding: 16px 64px;
+  background-color: #F4CE14;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px #495E57 ;
+  font-family: 'Markazi Text', serif;
+  font-weight: 400;
+  font-size: 18px;
+  border: 1px solid #495E57;
+  margin-right: 20px;
+  
+}
+
 .weeks-special{
   font-family:'Markazi Text', serif;
   font-weight: 400;
