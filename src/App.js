@@ -5,7 +5,7 @@ import Nav from './navigation/Nav';
 import Main from './Main';
 import Footer from './Footer';
 import './App.css';
-import Reserve from './Reserve';
+import ReserveTable from './ReserveTable';
 import Info from './Info';
 
 
@@ -13,7 +13,7 @@ function App() {
   return(<>
       
   
-      <Info/>
+      <ReserveTable/>
   </>
   )
   /*return (
