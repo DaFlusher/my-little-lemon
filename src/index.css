@@ -145,11 +145,12 @@ select{
 .description{
   font-family: 'Karla', sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   width: 30%;
   padding-left: 70px;
   color: #fff;
   text-align: left;
+  
 }
 
 .reserve-table{
@@ -157,13 +158,16 @@ select{
   background-color: #F4CE14;
   color: black;
   border-radius: 8px;
-  box-shadow: 1px 1px 1px #F4CE14 ;
+  box-shadow: 1px 1px 1px #495E57;
   font-family: 'Markazi Text', serif;
   font-weight: 400;
   font-size: 16px;
   border: 0;
+  margin-top: 10px;
 }
-
+.reserve-table:hover{
+  border: 2px solid #495E57;
+}
 
   
 

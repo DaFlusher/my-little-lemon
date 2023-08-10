@@ -11,7 +11,7 @@ const Home = () => {
 
         <>
             
-            <div className='grids' style={{}}>
+            <div className='grids'>
               <div className='nav-head-grid'>
                 
                   <Header/>

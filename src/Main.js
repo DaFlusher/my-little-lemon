@@ -1,3 +1,4 @@
+import { Routes, Route, Link } from "react-router-dom";
 const Main = () => {
     const heading='Little Lemon';
     const location='Chicago';
@@ -11,13 +12,19 @@ const Main = () => {
                 <section className='hero-image'>
                     <h1 className="heading">{heading}</h1>
                     <h2 className="location">{location}</h2>
+                    <section style={{display:'flex',justifyContent:'space-between',alignContent:'center'}}>
+                            
+                        
                     
-                    <p className="description">{intro}<br/>
-                    <button className='reserve-table' role='button'>Reserve a table</button></p>
-
-                    
-
-                    <img src={require('./images/greek-dessert.jpg') } height={200} role='image' alt='little-lemon logo'/>
+                        <p className="description">{intro}<br/>
+                        
+                        <Link to='/reserve-a-table' >
+                        <button className='reserve-table' role='button'>Reserve a table</button>
+                        </Link>
+                        </p>
+                
+                        <img src={require('./images/dinner3.jpg') }  role='image' alt='little-lemon logo' style={{borderRadius:'8px', marginRight:'25%'}}/>
+                    </section>
 
                 </section>
                 <section className="weeks-special">
