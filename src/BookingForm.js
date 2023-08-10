@@ -38,10 +38,10 @@ const BookingForm = () => {
             <   form  onSubmit={handleSubmit} style={{ display: "grid",maWidth:'80%', gap: '20', marginLeft:'30%',marginTop:'2%'}}>
                     
 
-                            <label htmlFor="res-date">1. Choose date</label><br/>
+                            <label htmlFor="res-date">1. Choose date:</label><br/>
                             <input type="date" id="res-date" value={date} onChange={handleDateChange}  /><br/>
 
-                            <label htmlFor="res-time">2. Choose time</label><br/>
+                            <label htmlFor="res-time">2. Choose time:</label><br/>
                             <select id="res-time " value={availableTime} onChange={handleTimeChange} ><br/>
                                 <option>17:00</option>
                                 <option>18:00</option>
@@ -51,9 +51,9 @@ const BookingForm = () => {
                                 <option>22:00</option>
                             </select>
                            
-                            <label htmlFor="guests">3. Number of guests</label><br/>
+                            <label htmlFor="guests">3. Number of guests:</label><br/>
                             <input type="number" min={1} max={10} id="guests" onChange={handleNumberChange} value={number} /><br/>
-                            <label htmlFor="occasion">4. Occasion</label><br/>
+                            <label htmlFor="occasion">4. Occasion:</label><br/>
                             <select id="occasion" value={occassion} onChange={handleOccassionChange}>
                                 <option value='birthday'>Birthday</option>
                                 <option value='anniversary'>Anniversary</option>
