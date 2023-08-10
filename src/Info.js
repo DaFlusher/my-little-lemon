@@ -1,6 +1,6 @@
 import { hover } from '@testing-library/user-event/dist/hover';
 import Header from './Header';
-import Nav from './navigation/Nav';
+import Nav from './Nav';
 import { useState } from 'react';
 import Footer from './Footer';
 

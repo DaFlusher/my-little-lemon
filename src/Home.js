@@ -1,8 +1,8 @@
 
-/*import{Route,Routes} from 'react-router-dom'
+import{Route,Routes} from 'react-router-dom'
 import './App.css';
 import Header from './Header';
-import Nav from './navigation/Nav';
+import Nav from './Nav';
 import Main from './Main';
 import Footer from './Footer';
 
@@ -37,7 +37,7 @@ const Home = () => {
       );
 }
  
-export default Home;*/
+export default Home;
 
 
 

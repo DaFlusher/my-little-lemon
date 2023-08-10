@@ -1,21 +1,31 @@
 import{Route,Routes} from 'react-router-dom'
+import { useState } from 'react';
 
 import Header from './Header';
-import Nav from './navigation/Nav';
+import Nav from './Nav';
 import Main from './Main';
 import Footer from './Footer';
 import './App.css';
 import ReserveTable from './ReserveTable';
+import BookingForm from './BookingForm';
 import Info from './Info';
+import Home from './Home';
 
 
 function App() {
-  return(<>
+
+  return(
+  <>
+
+    <Routes>
+      <Route path='/'element={<Home/>}/>
+      <Route path='/reserve-a-table' element={<ReserveTable/>}/>
+    </Routes>
       
+  </>);
+
+}
   
-      <ReserveTable/>
-  </>
-  )
   /*return (
     <>
       <div className='grids' style={{}}>
@@ -46,6 +56,6 @@ function App() {
 
 
 
-}
+
 
 export default App;
