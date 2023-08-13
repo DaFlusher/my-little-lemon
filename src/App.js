@@ -13,13 +13,18 @@ import Home from './Home';
 
 
 function App() {
+  const[availableTime, setAvailableTime]= useState('');
+
+  const handleTimeChange=(e)=>{
+        
+    setAvailableTime(e.target.value)}
 
   return(
   <>
 
     <Routes>
       <Route path='/'element={<Home/>}/>
-      <Route path='/reserve-a-table' element={<ReserveTable/>}/>
+      <Route path='/reserve-a-table' element={<ReserveTable setAvailableTime={setAvailableTime} availableTime={availableTime} handleTimeChange={handleTimeChange}/>}/>
     </Routes>
       
   </>);

@@ -8,7 +8,7 @@ import BookingForm from './BookingForm';
 
 
 
-const ReserveTable = () => {
+const ReserveTable = (props) => {
     
     
     return (
@@ -26,7 +26,7 @@ const ReserveTable = () => {
                     <h1 className='table-head'>Reserve a Table</h1>
                     <h2 className='table-subhead'>Please enter your dining info below</h2>
 
-                    <BookingForm />
+                    <BookingForm availableTime={props.availableTime} setAvailableTime={props.setAvailableTime} handleTimeChange={props.handleTimeChange} />
                     
               </section>
               <Footer/>

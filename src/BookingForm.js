@@ -1,18 +1,16 @@
 import { useState } from "react";
 
-const BookingForm = () => {
+const BookingForm = (props) => {
 
     
     const [date, setDate]= useState(new Date().toLocaleDateString());
     
     const[number, setNumber]= useState('1');
     const[occassion, setOccassion]= useState('');
-    const[availableTime, setAvailableTime]= useState('');
+    
 
   
-    const handleTimeChange=(e)=>{
-        
-    setAvailableTime(e.target.value)}
+   
 
     const handleDateChange=(e)=>{
         setDate(e.target.value)
@@ -28,7 +26,7 @@ const BookingForm = () => {
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        setAvailableTime('');
+        props.setAvailableTime('');
         setDate('');
         setNumber('1');
         setOccassion('')
@@ -40,9 +38,10 @@ const BookingForm = () => {
 
                             <label htmlFor="res-date">1. Choose date:</label><br/>
                             <input type="date" id="res-date" value={date} onChange={handleDateChange}  /><br/>
+                            <p>You chose:{date}</p>
 
                             <label htmlFor="res-time">2. Choose time:</label><br/>
-                            <select id="res-time " value={availableTime} onChange={handleTimeChange} ><br/>
+                            <select id="res-time " value={props.availableTime} onChange={props.handleTimeChange} ><br/>
                                 <option>17:00</option>
                                 <option>18:00</option>
                                 <option>19:00</option>
@@ -50,6 +49,7 @@ const BookingForm = () => {
                                 <option>21:00</option>
                                 <option>22:00</option>
                             </select>
+                            <p>You chose:{props.availableTime}</p>
                            
                             <label htmlFor="guests">3. Number of guests:</label><br/>
                             <input type="number" min={1} max={10} id="guests" onChange={handleNumberChange} value={number} /><br/>
